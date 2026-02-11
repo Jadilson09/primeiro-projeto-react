@@ -7,11 +7,16 @@
   border: 1px solid #ccc;
   font-size: 1rem;
 }
+body {
+  background: #e0f7fa !important;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: #e0f7fa;
 }
 
 .logo {
@@ -42,8 +47,65 @@
   }
 }
 
+/* Estilo principal da página com verde água */
+.container-app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #e0f7fa;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #00968833;
+}
+
+.titulo-app {
+  font-size: 2.2rem;
+  color: #009688;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.btn-toggle {
+  background: linear-gradient(90deg, #009688 0%, #26c6da 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: background 0.3s;
+}
+.btn-toggle:hover {
+  background: linear-gradient(90deg, #26c6da 0%, #009688 100%);
+}
+
+.lista-alunos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
 .card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #00968822;
   padding: 2em;
+  min-width: 220px;
+  max-width: 300px;
+  text-align: left;
+  border: 1px solid #b2dfdb;
+}
+
+.card h2 {
+  color: #009688;
+  margin-bottom: 0.5em;
+}
+
+.card p {
+  color: #555;
+  margin: 0.3em 0;
 }
 
 .read-the-docs {
